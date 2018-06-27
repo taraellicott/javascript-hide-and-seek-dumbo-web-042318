@@ -23,10 +23,22 @@ function deepestChild() {
 
 function increaseRankBy(n) {
   const lists = document.querySelectorAll('.ranked-list');
-  for (let i = 0; j = lists.length, i < j; i++) {
+  for (let i = 0, j = lists.length; i < j; i++) {
     let children = lists[i].children;
-  for (let k = 0; l = children.length, k < l; k++) {
+  for (let k = 0, l = children.length; k < l; k++) {
     children[k].innerHTML = parseInt(children[k].innerHTML) + n;
     }
     }
   }
+
+// function increaseRankBy(n) {
+//   const rankedLists = document.querySelectorAll('.ranked-list')
+//
+//   for (let i = 0, l = rankedLists.length; i < l; i++) {
+//     let children = rankedLists[i].children
+//
+//     for (let j = 0, k = children.length; j < k; j++) {
+//       children[j].innerHTML = parseInt(children[j].innerHTML) + n
+//     }
+//   }
+// }
